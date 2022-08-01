@@ -1,7 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import First from './Pages/First.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import First from "./Pages/First.vue";
 
-import './assets/main.css'
+import "./assets/main.css";
 
-createApp(First).mount("#app");
+import MyHeader from "./components/MyHeader.vue";
+
+createApp(First).component("MyHeader", MyHeader).mount("#app");
